@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+	<head>
+<style type="text/css">
+* {/* for demo only*/
+    margin:0px;
+    padding:0px
+}
+html, body {
+    height:100%;/* needed to base 100% height on something known*/
+   // text-align:center;
+}
+.outer {
+    //width:760px;
+    //background:#ffffcc;
+    margin:auto;
+    min-height:100%;
+    margin-top:0px;/*footer height - this drags the outer 40px up through the top of the monitor */
+    text-align:left;
+}
+* html .outer {
+    height:100%
+}
+#header {
+  //  background:red;
+    border-top:40px solid #fff; /* soak up negative margin and allows header to start at top of page*/
+}
+.footer {/* footer now sits at bottom of window*/
+  //  background:red;
+    //width:760px;
+    margin:auto;
+    height:40px;/* must match negative margin of #outer */
+    clear:both;
+}
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+}
+h1, h2, p {
+    padding:0 10px;
+}
+.outer:after {
+    clear:both;
+    display:block;
+    height:1%;
+    content:" ";
+}
+</style>
+		<meta charset="utf-8">
+
+		<title>Programmer Typer</title>
+		<meta name="keywords" content="Objective-C,ThinkGeek,Python,Ruby,Javascript,HTML&CSS,programming,programmer,web developer,software developer">
+
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js' type='text/javascript'></script>
+
+		<script src='script.js' type='text/javascript'></script>
+
+		<script type='text/javascript'>
+
+			Typer.speed=3;
+
+			Typer.file='code.txt';
+
+			Typer.init();
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id='console' class="outer">
+
+        </div>
+        <div id='menu' class="footer">
+        <table width="50%">
+
+
+        <tr>
+          <td><a href="https://www.github.com/ankitray1"  target="_blank"><span class="inverse">Ctrl+B</span>&nbsp;Rate on Github</a></td>
+          <td><a href="https://www.Instagram.com/rayankit_2020"  target="_blank"><span class="inverse">Ctrl+L</span>&nbsp;Follow On Instagram</a></td>
+          <td><a href="https://ankitray1.github.io"  target="_blank"><span class="inverse">Ctrl+P</span>&nbsp;My PortFolio</a></td>
+          <td><a href="http://shopmecart.in"  target="_blank"><span class="inverse">Ctrl+E</span>&nbsp; My Website</a></td>
+        </tr>
+        
+        </table>
+          </div>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66417119); }catch(e){}</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38069369-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	</body>
+
+</html>
